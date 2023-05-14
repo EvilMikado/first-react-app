@@ -1,13 +1,14 @@
+import logo from '../../images/logo192.png'
 
 export default function Header(){
   return (
     <header>
-      <nav>
+      <nav className="nav">
         <div className="logo">
-          <img src="./images/logo192.png" alt="React" />
-          <span>ReactFacts</span>
+          <img src={logo} alt="" />
+          <h1>ReactFacts</h1>
         </div>
-        <span>React Course - Project 1</span>
+        <span className="nav__current">React Course - Project 1</span>
       </nav>
     </header>
   )
